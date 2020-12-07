@@ -6,21 +6,17 @@ footer {
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 768px) {
-    padding-bottom: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 10px;
-  }
-
   p {
     margin: 0;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 
 .page-footer .container {
-  background-color: $footer-pink;
+  border-bottom: 1px solid #e1e1e1;
 
   @media screen and (min-width: 768px) {
     padding-left: 34px;
@@ -366,6 +362,17 @@ footer {
     border-radius: 22px;
     border: none;
 
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+
     @media screen and (min-width: 768px) {
       width: 192px;
     }
@@ -382,29 +389,17 @@ footer {
         margin-right: 10px;
       }
     }
-
-    &-text {
-      margin-right: 8px;
-    }
-    &-symbol,
-    &-text {
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      color: #ffffff;
+    .arrow {
+      fill: #fff;
+      height: 14px;
+      margin-left: 14px;
     }
     &-two {
       background-color: #fff;
+      color: #d41342;
 
-      .button-text,
-      .button-symbol {
-        color: #d41342;
+      .arrow {
+        fill: #d41342;
       }
     }
   }
@@ -413,21 +408,23 @@ footer {
 .button-two:hover,
 .button-two:focus {
   background-color: #d41342;
+  color: #fff;
+}
 
-  .button-text,
-  .button-symbol {
-    color: #fff;
-  }
+.button-two:hover .arrow,
+.button-rwo:focus .arrow {
+  fill: #fff;
 }
 
 .button-one:hover,
 .button-one:focus {
   background-color: #fff;
+  color: #d41342;
+}
 
-  .button-text,
-  .button-symbol {
-    color: #d41342;
-  }
+.button-one:hover .arrow,
+.button-one:focus .arrow {
+  fill: #d41342;
 }
 
 .homemade {
@@ -441,10 +438,6 @@ footer {
   color: #ffa5ba;
 
   width: 232px;
-
-  @media screen and (min-width: 767px) {
-    margin-bottom: 10px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -500,6 +493,26 @@ footer {
   margin: 0;
   padding-left: 0;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    margin-bottom: 91px;
+
+    .right {
+      margin-left: auto;
+      margin-right: 36px;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 97px;
+  }
 }
 
 .social-buttons {
@@ -576,13 +589,6 @@ footer {
     }
   }
 }
-.footer-line {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #e1e1e1;
-}
 .copyright-item {
   display: flex;
   align-items: center;
@@ -591,12 +597,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     padding-top: 29px;
+    padding-bottom: 18px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 9px;
+    padding-bottom: 10px;
   }
 
   .copyright {
@@ -621,29 +632,21 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer-flex {
-    display: flex;
-    flex-direction: row;
-    box-sizing: content-box;
-    margin-bottom: 91px;
-
-    .right {
-      margin-left: auto;
-      margin-right: 36px;
-
-      @media screen and (min-width: 768px) {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-flex {
     margin-bottom: 97px;
   }
 }
 .white-elem {
   width: 100%;
-  height: 102px;
+  height: 84px;
   background-color: white;
+  padding-left: auto;
+  padding-right: auto;
+
+  @media screen and (min-width: 768px) {
+    height: 78px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 102px;
+  }
 }
