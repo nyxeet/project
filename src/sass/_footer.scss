@@ -647,3 +647,20 @@ footer {
   height: 102px;
   background-color: white;
 }
+.white-main {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    height: 86px;
+    background-color: white;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 132px;
+    background-color: white;
+  }
+}
