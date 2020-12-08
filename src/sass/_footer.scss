@@ -405,9 +405,15 @@ footer {
     }
   }
 }
-
+.button-one {
+  stroke: var(--color1, #fff);
+}
+.button-two {
+  stroke: var(--color1, #d41342);
+}
 .button-two:hover,
 .button-two:focus {
+  stroke: var(--color1, #fff);
   background-color: #d41342;
   color: #fff;
 }
@@ -419,6 +425,7 @@ footer {
 
 .button-one:hover,
 .button-one:focus {
+  stroke: var(--color1, #d41342);
   background-color: #fff;
   color: #d41342;
 }
@@ -553,6 +560,7 @@ footer {
       max-width: 20px;
       max-height: 20px;
       fill: #fff;
+      transition: all 250ms linear;
     }
 
     &:hover,
@@ -656,12 +664,14 @@ footer {
   width: 100%;
   background-color: #fff;
   @media screen and (min-width: 320px) {
-    height: 60px;
+
+    height: 84px;
   }
   @media screen and (min-width: 768px) {
-    height: 80px;
+    height: 120px;
   }
   @media screen and (min-width: 1200px) {
-    height: 100px;
+    height: 131px;
+
   }
 }
