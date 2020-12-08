@@ -516,10 +516,12 @@ header {
       border-radius: 22px;
       border: 0;
       outline: 0;
+
       stroke: var(--color1, #d41443);
       transition: all 250ms linear;
       &:hover {
         stroke: var(--color1, #fff);
+
         background-color: $title-pink;
         color: white;
       }
@@ -529,6 +531,7 @@ header {
     }
   }
 }
+
 .svg {
   margin-left: 3px;
 }
